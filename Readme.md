@@ -1,4 +1,3 @@
-
 # async-each-series
 
   Apply an async function to each Array element in series
@@ -9,28 +8,9 @@
 
     $ component install jb55/async-each-series
 
-## Example
+## API
 
-```js
-var async = {}
-async.eachSeries = require('async-each-series')
-
-var fragment = document.createDocumentFragment();
-
-function render(model, function(cb){
-  _.defer(function(){
-    var el = template(model);
-    fragment.appendChild(el);
-    cb();
-  });
-});
-
-async.eachSeries([a, b, c /*, ... */], render, function(err){
-  if (!err)
-    document.body.appendChild(fragment);
-});
-```
-
+### eachSeries(array, iterator(elem, cb(err,elem)), callback(err))
 
 ## License
 
