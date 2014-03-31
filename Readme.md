@@ -4,13 +4,37 @@
 
 ## Installation
 
+  Install with [npm](https://www.npmjs.org):
+
+    $ npm install async-each-series
+
   Install with [component(1)](http://component.io):
 
     $ component install jb55/async-each-series
 
+## Examples
+
+### Node.js
+
+```javascript
+var each = require('async-each-series');
+each(['foo','bar','baz'], function(el, next) {
+  setTimeout(function () {
+    console.log(el);
+    next();
+  }, Math.random() * 5000);
+}, function (err) {
+  console.log('finished');
+});
+//=> foo
+//=> bar
+//=> baz
+//=> finished
+```
+
 ## API
 
-### eachSeries(array, iterator(elem, cb(err,elem)), callback(err))
+### eachSeries(array, iterator(elem, cb(err, elem)), finishedCb(err))
 
 ## License
 
