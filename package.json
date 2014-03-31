@@ -1,0 +1,22 @@
+{
+  "name": "async-each-series",
+  "version": "0.0.1",
+  "description": "Apply an async function to each Array element in series.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "git@github.com:jb55/async-each-series.git"
+  },
+  "keywords": [
+    "async",
+    "asyncEachSeries",
+    "eachSeries",
+    "each",
+    "asyncEach"
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "author": "jb55",
+  "license": "MIT"
+}
