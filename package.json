@@ -20,11 +20,11 @@
     "harness": "mocha-bdd",
     "files": "test.js",
     "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
+      "ie/8..latest",
+      "chrome/28..latest",
+      "firefox/latest",
       "safari/latest",
-      "opera/11.0..latest",
+      "opera/latest",
       "iphone/6",
       "ipad/6",
       "android-browser/latest"
