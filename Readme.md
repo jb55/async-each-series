@@ -4,6 +4,8 @@
 
   [![Build Status](https://travis-ci.org/jb55/async-each-series.png)](https://travis-ci.org/jb55/async-each-series)
 
+  [![browser support](https://ci.testling.com/jb55/async-each-series.png)](https://ci.testling.com/jb55/async-each-series)
+
 ## Installation
 
   Install with [npm](https://www.npmjs.org):
