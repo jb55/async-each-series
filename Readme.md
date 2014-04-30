@@ -2,6 +2,8 @@
 
   Apply an async function to each Array element in series
 
+  [![Build Status](https://travis-ci.org/jb55/async-each-series.png)](https://travis-ci.org/jb55/async-each-series)
+
 ## Installation
 
   Install with [npm](https://www.npmjs.org):
