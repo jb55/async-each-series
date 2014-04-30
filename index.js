@@ -1,7 +1,6 @@
-
 module.exports = function (arr, iterator, callback) {
   callback = callback || function () {};
-  if (!arr.length) {
+  if (!Array.isArray(arr) || !arr.length) {
       return callback();
   }
   var completed = 0;
@@ -12,8 +11,8 @@ module.exports = function (arr, iterator, callback) {
         callback = function () {};
       }
       else {
-        completed += 1;
-        if (completed >= arr.length) { callback(null); }
+        ++completed;
+        if (completed >= arr.length) { callback(); }
         else { iterate(); }
       }
     });
