@@ -5,7 +5,10 @@ build: components index.js
 components: component.json
 	@component install --dev
 
+test:
+	npm test
+
 clean:
 	rm -fr build components template.js
 
-.PHONY: clean
+.PHONY: clean test
