@@ -2,9 +2,9 @@
 
   Apply an async function to each Array element in series
 
-  [![Build Status](https://travis-ci.org/jb55/async-each-series.png)](https://travis-ci.org/jb55/async-each-series)
+  [![Build Status](https://travis-ci.org/jb55/async-each-series.svg)](https://travis-ci.org/jb55/async-each-series)
 
-  [![browser support](https://ci.testling.com/jb55/async-each-series.png)](https://ci.testling.com/jb55/async-each-series)
+  [![browser support](https://ci.testling.com/jb55/async-each-series.svg)](https://ci.testling.com/jb55/async-each-series)
 
 ## Installation
 
