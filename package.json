@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Apply an async function to each Array element in series.",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "url": "git@github.com:jb55/async-each-series.git"
   },
@@ -37,6 +40,6 @@
   "license": "MIT",
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^1.18.2"
+    "mocha": "^2.0.1"
   }
 }
