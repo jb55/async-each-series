@@ -1,6 +1,6 @@
 {
   "name": "async-each-series",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Apply an async function to each Array element in series.",
   "main": "index.js",
   "files": [
