@@ -33,3 +33,19 @@ describe('edge cases', function() {
     });
   });
 });
+
+describe('handles lots of elements', function () {
+  it('it shouldnt stack overflow', function (done) {
+    var lots = 100000
+    var arr = new Array(lots);
+    for (var i = 0; i < lots; ++i) arr[i] = i
+    each(arr, handle, function(err) {
+      expect(err).to.not.be.ok()
+      done()
+    });
+
+    function handle(n, next) {
+      next()
+    }
+  });
+});

@@ -13,7 +13,7 @@ module.exports = function (arr, iterator, callback) {
       else {
         ++completed;
         if (completed >= arr.length) { callback(); }
-        else { iterate(); }
+        else { setImmediate(iterate); }
       }
     });
   };
