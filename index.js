@@ -13,9 +13,17 @@ module.exports = function (arr, iterator, callback) {
       else {
         ++completed;
         if (completed >= arr.length) { callback(); }
-        else { setImmediate(iterate); }
+        else { nextTick(iterate); }
       }
     });
   };
   iterate();
 };
+
+function nextTick (cb) {
+  if (typeof setImmediate === 'function') {
+    setImmediate(cb);
+  } else {
+    process.nextTick(cb);
+  }
+}
